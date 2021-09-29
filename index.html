@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+<title>Imobiliária - Remax 300</title>
+<link rel="icon" href="img/logo.png"> 
+<link href="css/style.css" rel="stylesheet">  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+
+    <div class="maindiv">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="hidden" name="accessKey" value="6dc0dd68-dcbc-4408-b08c-42214e9136aa">
+        <input type="hidden" name="redirectTo" value="/final.html">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="inputName" name="name" required>
+            <label for="floatingInput">Nome</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="inputEmail" name="email" required>
+            <label for="floatingPassword">E-mail</label>
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="inputTelefone" name="phone" OnBlur="mascara(this)" maxlength=17 required>
+            <label for="floatingPassword">DDD + Telefone ou Celular</label>
+            <span class="">*Apenas Números</span>
+        </div>
+        <p>Deseja Vender, Comprar ou Alugar um imóvel ?</p>
+        <div>
+            <select class="form-select" aria-label="Default select example" name="message">
+                <option >Escolha uma opção</option>
+                <option value="Desejo Alugar">Alugar</option>
+                <option value="Desejo Vender">Vender</option>
+                <option value="Desejo Comprar">Comprar</option>
+            </select>
+        </div>
+        <p class="av">Número de quartos ?</p>
+        <div>
+            <select class="form-select" aria-label="Default select example" name="message">
+                <option selected >Escolha uma opção</option>
+                <option value="Com 1 Quarto">1 Quarto</option>
+                <option value="Com 2 Quarto">2 Quartos</option>
+                <option value="Com 3 Quarto">3 Quartos</option>
+                <option value="Com 4 Quarto">4 Quartos</option>
+                <option value="Com 5 Quarto">5 Quartos</option>
+                <option value="Com + de 5  Quarto">Mais de 5 Quartos</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-6 ">
+                <input type="submit" class="rowedit buttonsub" id="buttonSubmit" OnMouseEnter=mouseon() OnMouseOut=mouseoff()></input>
+            </div>
+            <div class="col-6"><img class="logo300" src="img/logo300.png" alt="logoRmax300"></div>
+        </div>
+    </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/scripts.js"></script>
+</body>
+</html>
