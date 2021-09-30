@@ -10,12 +10,20 @@ body {
         display: flex;
     }
 
+    .conteiner{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
     p{
         display: flex;
         font-family: 'Courier New', Courier, monospace;
         padding-top: 10px;
         font-size: larger; 
         font-weight: bold;
+    }
+    .p2{
+        font-size: xx-large;
     }
     .av{
         padding-top: 15px;
@@ -24,6 +32,10 @@ body {
         max-width: 100%;
         height: 170px;
         margin: 5px;
+    }
+    .logofinal{
+        max-width: 100%;
+        height: 200px;
     }
     .maindiv {
     padding: 8px;
@@ -37,7 +49,10 @@ body {
     box-shadow: 3px 3px 0.3px rgba(0,0,0,.3);
     word-wrap: break-word;
     text-align: center;
+    display: flex;
     }
+
+
     .buttonsub {
     border: black;
     color: white;
